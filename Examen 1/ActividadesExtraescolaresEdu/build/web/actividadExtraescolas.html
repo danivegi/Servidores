@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Agenda de Actividades Extraescolares</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <body>
+        <h2>Agenda de Actividades Extraescolares</h2>
+        <table border="0">
+            <form method="POST" action="ServletValida">
+                <tr>
+                    <td>Nombre de la actividad: </td>
+                    <td><input type="text" name="nombre" required pattern="[A-Za-z ]+"></td>
+                </tr>
+                <tr>
+                    <td>Fecha: </td><td><input type="date" name="fecha" required></td>
+                </tr>
+                <tr>
+                    <td>Hora: </td><td><input type="time" name="hora" required></td>
+                </tr>
+                <tr>
+                    <td>Lugar: </td>
+                    <td><input type="text" name="lugar" required pattern="[A-Za-z ]+"></td>
+                </tr>
+                <tr>
+                    <td>Destinatario: </td>
+                    <td><input type="radio" id="destinatario" name="destinatario" value="alumnos" checked/>alumnos
+                        <input type="radio" id="destinatario" name="destinatario" value="profesores" />profesores</td>
+                </tr>
+                <tr>
+                    <tr>
+                    <td>Tipo de actividad: </td>
+                    <td> <input type="checkbox" id="actividad" name="actividad" value="Academica" checked />ACADEMICA <br> 
+                         <input type="checkbox" id="actividad" name="actividad" value="Deportiva" />DEPORTIVA<br>
+                         <input type="checkbox" id="actividad" name="actividad" value="Cultural" />CULTURAL <br> 
+                         <input type="checkbox" id="actividad" name="actividad" value="Ccnvivencia"/>CONVIVENCIA<br></td>
+                    </tr>
+                <tr>
+                <tr>
+                    <tr>
+                    <td>Curso destinado: </td>
+                    <td><select name="curso">
+                            <option>1 ESO</option>
+                            <option>2 ESO</option>
+                            <option>3 ESO</option>
+                            <option>4 ESO</option>
+                        </select></td></tr>
+                <tr>
+                <tr>
+                    <td>Profesor responsable:</td>
+                    <td><input type="text" name="responsable" required pattern="[A-Za-z ]+"></td>
+                </tr>  
+                <tr>
+                    <td>Observaciones:</td>
+                    <td><textarea name="observaciones" required></textarea></td>
+                </tr> 
+                 <tr>
+                     
+                    <td><input type="submit" value="Añadir cita"></td>
+                    <td><input type="reset" value="Borrar cita"></td>
+                </tr> 
+            </form>
+        </table>  
+        <form name="verCarro" action="listado.jsp" method="POST">
+            <input type="submit" value="Ver Actividades" name="verCarro" />
+        </form>
+        
+        
+        
+
+    </body>
+        
+   
+</html>

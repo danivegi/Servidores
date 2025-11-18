@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Encuesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="text-align: center">Encuesta privada</h1>
+        <br><br><!-- comment -->
+        
+        <h2>Rellena los datos indicados y pulsa Enviar</h2><!-- comment -->
+        <br><br><!-- comment -->
+        
+        <form action="ServletEncuesta" method="post">
+        <label>Introduce tu nombre:</label><!-- comment -->
+        <input type="text" name="nombre" required><br><br>
+        
+        <label>Introduce tus apellidos:</label><!-- comment -->
+        <input type="text" name="apellidos" required><br><br><!-- comment -->
+        
+        <label>Teclea tu numero de telefono:</label><!-- comment -->
+        <input type="text" name="telefono" required><br><br>
+        
+        <label>Indica tu ciudad de nacimiento:</label><!-- comment -->
+        <input type="text" name="ciudad" required><br><br>
+        
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="mujer" required> Mujer
+        <input type="radio" name="sexo" value="hombre" required> Hombre <br><br><!-- comment -->
+        
+        <label>Selecciona tu país de origen:</label><!-- comment -->
+        <select name="pais" required>
+            <option value="Argentina">Argentina</option><!-- comment -->
+            <option value="España">España</option>
+            <option value="Portugal">Portugal</option>
+        </select><br><br><!-- comment -->
+        
+        <label style="color: red">Selecciona tus actividades de ocio favoritas:</label><br>
+        <input type="checkbox" name="ocio" value="parapente">PARAPENTE<br>
+        <input type="checkbox" name="ocio" value="ala_delta">ALA DELTA<br>
+        <input type="checkbox" name="ocio" value="submarinismo">SUBMARINISMO<br>
+        <input type="checkbox" name="ocio" value="esqui">ESQUI<br><br>
+        
+        <label style="color: red">Comentarios sobre la página:</label>
+        <textarea name="comentarios"></textarea><br><br><!-- comment -->
+        
+        <input type="submit" value="Enviar encuesta">
+        <input type="reset" value="Borrar datos"><!-- comment -->
+        </form>
+
+    </body>
+</html>
