@@ -98,11 +98,12 @@
                             <tr>
                                 <td><%=listaVentas.get(x).getFecha()%></td>
                                 <td><%=listaVentas.get(x).getComercial()%></td>
-                                <td><%=listaVentas.get(x).getFecha()%></td>
-                                <td><%=listaVentas.get(x).getFecha()%></td>
-                                <td><%=listaVentas.get(x).getFecha()%></td>
-                                <td><%=listaVentas.get(x).getFecha()%></td>
-                                <td><%=listaVentas.get(x).getFecha()%></td>
+                                <td><%=listaVentas.get(x).getProducto()%></td>
+                                <td><%=listaVentas.get(x).getCantidad()%></td>
+                                <td><%=listaVentas.get(x).getPrecio()%></td>
+                                <td><%=listaVentas.get(x).getTotal()%></td>
+                                <td><%=listaVentas.get(x).getDescuento()%></td>
+                                <td><%=totaldescuento%></td>
                             </tr>
                             }
                     </td>

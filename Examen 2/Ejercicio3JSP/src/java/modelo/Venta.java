@@ -5,48 +5,27 @@ import java.util.Date;
 
 public class Venta {
     
-    private String codComercial;
-    private String refProducto;
-    private int cantidad;
     private LocalDate fecha;
+    private String comercial;
+    private String producto;
+    private int cantidad;
+    private double precio;
+    private double total;
+    public int descuento;
+    
 
     public Venta() {
         
     }
 
-    public Venta(String codComercial, String refProducto, int cantidad, LocalDate fecha) {
-        this.codComercial = codComercial;
-        this.refProducto = refProducto;
-        this.cantidad = cantidad;
+    public Venta(LocalDate fecha, String comercial, String producto, int cantidad, double precio, double total, int descuento) {
         this.fecha = fecha;
-    }
-
-    Venta(String comercial, String producto, int cantidad, double precio, double total, int descuento, double totalDescuento, Date fecha) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    public String getCodComercial() {
-        return codComercial;
-    }
-
-    public void setCodComercial(String codComercial) {
-        this.codComercial = codComercial;
-    }
-
-    public String getRefProducto() {
-        return refProducto;
-    }
-
-    public void setRefProducto(String refProducto) {
-        this.refProducto = refProducto;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
+        this.comercial = comercial;
+        this.producto = producto;
         this.cantidad = cantidad;
+        this.precio = precio;
+        this.total = total;
+        this.descuento = descuento;
     }
 
     public LocalDate getFecha() {
@@ -57,9 +36,54 @@ public class Venta {
         this.fecha = fecha;
     }
 
-    @Override
-    public String toString() {
-        return "Venta{" + "codComercial=" + codComercial + ", refProducto=" + refProducto + ", cantidad=" + cantidad + ", fecha=" + fecha + '}';
+    public String getComercial() {
+        return comercial;
     }
+
+    public void setComercial(String comercial) {
+        this.comercial = comercial;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public int getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(int descuento) {
+        this.descuento = descuento;
+    }
+    
+    
     
 }

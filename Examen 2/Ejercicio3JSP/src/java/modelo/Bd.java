@@ -76,7 +76,7 @@ public class Bd {
                 int descuento = rs.getInt("descuento");
                 double totalDescuento = rs.getDouble("totalDescuento");
                 Date fecha = rs.getDate("fecha");
-                Venta nuevaVenta = new Venta(comercial, producto, cantidad, precio, total, descuento, totalDescuento, fecha);
+                Venta nuevaVenta = new Venta(LocalDate.EPOCH, comercial, producto, cantidad, precio, total, descuento);
                 listaVentas.add(nuevaVenta);
             }
             if (cnn != null) {
