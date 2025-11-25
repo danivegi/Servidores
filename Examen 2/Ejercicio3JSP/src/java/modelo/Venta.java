@@ -5,27 +5,32 @@ import java.util.Date;
 
 public class Venta {
     
-    private LocalDate fecha;
-    private String comercial;
-    private String producto;
-    private int cantidad;
-    private double precio;
-    private double total;
-    public int descuento;
+    LocalDate fecha;
+    String comercial,producto;
+    int cantidad,descuento;
+    double precio,total,totaldescuento;
     
 
     public Venta() {
         
     }
 
-    public Venta(LocalDate fecha, String comercial, String producto, int cantidad, double precio, double total, int descuento) {
+    public Venta(LocalDate fecha, String comercial, String producto, int cantidad) {
         this.fecha = fecha;
         this.comercial = comercial;
         this.producto = producto;
         this.cantidad = cantidad;
+    }
+
+    public Venta(LocalDate fecha, String comercial, String producto, int cantidad, int descuento, double precio, double total, double totaldescuento) {
+        this.fecha = fecha;
+        this.comercial = comercial;
+        this.producto = producto;
+        this.cantidad = cantidad;
+        this.descuento = descuento;
         this.precio = precio;
         this.total = total;
-        this.descuento = descuento;
+        this.totaldescuento = totaldescuento;
     }
 
     public LocalDate getFecha() {
@@ -83,7 +88,13 @@ public class Venta {
     public void setDescuento(int descuento) {
         this.descuento = descuento;
     }
-    
-    
+
+    public double getTotaldescuento() {
+        return totaldescuento;
+    }
+
+    public void setTotaldescuento(double totaldescuento) {
+        this.totaldescuento = totaldescuento;
+    }
     
 }

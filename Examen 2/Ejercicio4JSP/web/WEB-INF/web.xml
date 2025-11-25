@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>servlets.ServletLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletBuscaLibros</servlet-name>
+        <servlet-class>servlets.ServletBuscaLibros</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletAltaLibro</servlet-name>
+        <servlet-class>servlets.ServletAltaLibro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletModLibro</servlet-name>
+        <servlet-class>servlets.ServletModLibro</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/ServletLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletBuscaLibros</servlet-name>
+        <url-pattern>/ServletBuscaLibros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAltaLibro</servlet-name>
+        <url-pattern>/ServletAltaLibro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletModLibro</servlet-name>
+        <url-pattern>/ServletModLibro</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

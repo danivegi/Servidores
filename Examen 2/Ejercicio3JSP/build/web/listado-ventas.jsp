@@ -7,16 +7,6 @@
 <title>Documento sin título</title>
 </head>
 
-    <%
-      ServletContext contexto = getServletContext();
-      
-      String opcion;
-      if (request.getParameter("opcion") != null) {
-          opcion = request.getParameter("opcion");
-      } else {
-          opcion = "";
-      }
-    %>
     
 <body>
 
@@ -47,7 +37,7 @@
       
     <tr align="center">
         <td>
-            <a href="ventas.jsp?opcion=listado">
+            <a href="listado-ventas.jsp">
             <img src="imagenes/listado-ventas.jpg" width="180" height="80"/>
             </a>
         </td>
@@ -55,7 +45,7 @@
       
     <tr align="center">
         <td>
-            <a href="ventas.jsp?opcion=nueva">
+            <a href="nuevaVenta.jsp">
             <img src="imagenes/nueva-venta.jpg" width="180" height="80"/>
             </a>
         </td>

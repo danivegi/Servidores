@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>Documento sin t?tulo</title>
 </head>
 
     <%
@@ -25,7 +25,7 @@
     <td colspan="7" bgcolor="#333333">&nbsp;</td>
   </tr>
   <tr align="center">
-    <td colspan="7" bgcolor="#CCCCCC"><h1>APLICACIÓN DE GESTIÓN COMERCIAL</h1></td>
+    <td colspan="7" bgcolor="#CCCCCC"><h1>APLICACI?N DE GESTI?N COMERCIAL</h1></td>
   </tr>
   
   <tr align="center">
@@ -55,7 +55,7 @@
       
     <tr align="center">
         <td>
-            <a href="ventas.jsp?opcion=nueva">
+            <a href="nuevaVenta.jsp?opcion=nueva">
             <img src="imagenes/nueva-venta.jpg" width="180" height="80"/>
             </a>
         </td>
